@@ -36,7 +36,7 @@ function Success({ account, request, setRequest }) {
                 </div>
             </div>
             <div class="flex justify-center">
-                <button class=" border-blue-500 mb-28 border-2 bg-blue-500 text-white px-4 rounded-lg h-10 mt-4" onClick={(event) => {
+                <button class=" border-blue-500 mb-28 border-2 bg-blue-500 text-white px-4 rounded-lg h-10 mt-4 hover:bg-blue-400" onClick={(event) => {
                     event.preventDefault()
                     setRequest('true')
                 }}>

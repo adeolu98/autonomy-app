@@ -66,7 +66,7 @@ function App() {
     <div className="bg-black">
       <div>
         <div class="flex justify-end pr-4 pb-2">
-          <button class="border-blue-500 rounded-lg border sm:text-lg sm:font-bold px-2 h-10 mt-4 md:mt-4 text-black bg-white" onClick={(event) => {
+          <button class="border-blue-500 rounded-lg border sm:text-lg sm:font-bold px-2 h-10 mt-4 md:mt-4 text-black bg-white hover:bg-blue-200" onClick={(event) => {
             event.preventDefault()
             loadWeb3()
             loadBlockchainData()

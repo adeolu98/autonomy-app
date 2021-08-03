@@ -67,7 +67,7 @@ function Request({ account, request, networkId, setRequest, autonomyregistrycont
                     </div>
 
                     <div class="flex justify-center">
-                        <button class="border-blue-500 border-2 h-12 w-3/4 mt-4 sm:mt-12 text-white rounded-lg bg-black" onClick={(event) => {
+                        <button class="border-blue-500 border-2 h-12 w-3/4 mt-4 sm:mt-12 text-white rounded-lg bg-black hover:bg-gray-600" onClick={(event) => {
                             event.preventDefault()
                             if (account !== "connect wallet") {
                                 if (EthForCall >= 0.01) {
