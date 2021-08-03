@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Getting Started with autonomy app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Front end is meant to be used for sending trade execution requests to the autonomy project register contract
+
+check out contract folder and deploy the wrapperContract.sol or just use my already deployed version on ropsten at contract address 0x7B25baE960Da29ef5A1674c2CB0fe48731D9ddC7
 
 ## Available Scripts
 
