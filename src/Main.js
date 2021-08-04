@@ -6,7 +6,7 @@ import Success from "./sucessPage";
 import Sending from "./sending.js"
 
 function Main({ account, networkId, autonomyregistrycontract }) {
-    const [request, setRequest] = useState('true')
+    const [request, setRequest] = useState('')
 
     let content
     if (request == "true") {

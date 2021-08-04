@@ -1,7 +1,6 @@
 import './tailwind.css';
 import React, { Component, useState } from 'react';
-import Web3 from 'web3';
-
+import Loader from './loader'
 
 
 function Sending() {
@@ -9,12 +8,12 @@ function Sending() {
 
     return (
         <div className="bg-black">
-
-            <div className="flex justify-center">
-                <div className="text-4xl text-white mt-56 sm:mt-80 h-customLength" >
-                    sending request...
+           
+                <div className="text-4xl mt-56 sm:mt-80 h-customLength" >
+                <Loader></Loader>
                 </div>
-            </div>
+        
+            
         </div>
     );
 
