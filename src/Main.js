@@ -6,10 +6,10 @@ import Success from "./sucessPage";
 import Sending from "./sending.js"
 
 function Main({ account, networkId, autonomyregistrycontract }) {
-    const [request, setRequest] = useState('')
+    const [request, setRequest] = useState('true')
 
     let content
-    if (request == "true") {
+    if (request === "true") {
         content = <Request
             account={account}
             request={request}
@@ -17,7 +17,7 @@ function Main({ account, networkId, autonomyregistrycontract }) {
             networkId={networkId}
             autonomyregistrycontract={autonomyregistrycontract}
         />
-    } else if (request == 'false') {
+    } else if (request === 'false') {
         content = <Success
             account={account}
             request={request}
