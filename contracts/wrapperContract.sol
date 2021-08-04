@@ -14,7 +14,7 @@ contract TradeExecutor is ReentrancyGuard {
     address owner;
     bool executed;
     // active, contracts the state of contract, active/inactive
-    bool active;
+    bool public active;
     // time after which call can be executed 
     uint public time;
 
