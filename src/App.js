@@ -32,10 +32,10 @@ function App() {
       const ethBalance = await web3.eth.getBalance(accounts[0])
       setethbalance(ethBalance)
 
-      const networkID = await web3.eth.net.getId()
+      const networkID = await web3.eth.net .getId()
       setnetworkId(networkID)
       if (networkID !== 3) {
-        window.alert("please switch to ropsten and reload site")
+        window.alert("please switch to ropsten")
       }
 
     }
@@ -52,7 +52,7 @@ function App() {
       const networkID = await web3.eth.net.getId()
       setnetworkId(networkID)
       if (networkID !== 3) {
-        window.alert("please switch to ropsten and reload site")
+        window.alert("please switch to ropsten")
       }
 
     }
@@ -73,7 +73,9 @@ function App() {
             window.ethereum.on('accountsChanged', function () {
               // Time to reload your interface with accounts[0]! 
               loadWeb3()
+              loadBlockchainData()
             })
+            window.ethereum.on('chainChanged', (_chainId) => window.location.reload());
           }}> {account.slice(0, 14)}</button>
         </div>
         <div class="flex justify-start pl-4 -mt-10">
